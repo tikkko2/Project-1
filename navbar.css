@@ -1,0 +1,8 @@
+.navbar{
+    background-image: url("./photos/base.png");
+  background-size: cover;
+}
+
+.footer-container{
+  bottom: 0;
+}
