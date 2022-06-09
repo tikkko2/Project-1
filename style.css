@@ -16,6 +16,9 @@ body {
   .btn {
     margin-bottom: 30px;
   }
+  .first-container .row {
+    flex-direction: column;
+  }
 }
 .navbar .navbar-brand {
   font-size: 45px !important;
@@ -36,49 +39,23 @@ body {
   background-size: cover;
   height: 100vh !important;
 }
-.banner-image .container {
-  position: relative;
-}
-.banner-image .container .content {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.banner-image .content {
+  bottom: 1rem;
   z-index: 99;
+  position: absolute;
 }
-.banner-image .container .content h1 {
+.banner-image .content h1 {
   font-size: 48px !important;
   color: #e22f47 !important;
   font-weight: 700 !important;
 }
-.banner-image .container .content p {
+.banner-image .content p {
   font-size: 24px !important;
   color: #b9bcd1 !important;
   font-weight: 400 !important;
 }
-.banner-image .container .yellow-image {
-  top: 50%;
-  left: 50%;
-  transform: translate(75%, -40%);
-  width: 20%;
-}
-.banner-image .container .yellow-image .h1 {
-  color: white !important;
-  text-align: right;
-  font-size: 51px !important;
-  line-height: 51px !important;
-  font-weight: 700;
-}
-.banner-image .container .yellow-image .a-text {
-  font-size: 21px;
-  line-height: 51px;
-  color: #fde428;
-  font-weight: 700;
-  text-align: right;
-  text-decoration: underline solid #fde428 3px;
-}
-.banner-image .container .carousel-links a,
-.banner-image .container .carousel-links span {
+.banner-image .container a,
+.banner-image .container span {
   color: #fde428;
   font-size: 12px;
   letter-spacing: 0px;
@@ -86,6 +63,38 @@ body {
   color: #fde428;
   text-align: right;
   font-weight: 600;
+}
+.banner-image .container .yellow-image {
+  position: relative;
+}
+.banner-image .container .yellow-image .h1 {
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white !important;
+  text-align: right;
+  font-size: 51px !important;
+  line-height: 51px !important;
+  font-weight: 700;
+}
+.banner-image .container .yellow-image .h1 .a-text {
+  font-size: 21px;
+  color: #fde428;
+  text-decoration: underline solid #fde428 3px;
+}
+
+.ppp-0 {
+  font-size: 21px !important;
+  line-height: 25px !important;
+  color: #666666;
+  font-family: "Segoe UI Emoji";
+}
+
+.ppp-1 {
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+  font-family: "Segoe UI Emoji";
 }
 
 .first-container {
@@ -116,22 +125,34 @@ body {
   font-weight: 700 !important;
   text-decoration: underline solid #002e5b 3px;
 }
-.first-container .col-md {
+.first-container .col-lg-6 {
   height: fit-content;
 }
-.first-container .col-md .yellow {
+.first-container .col-lg-6 .yellow {
   background-color: #fde428;
-  height: 40px;
+  width: 50%;
+  height: 480px;
 }
-.first-container .col-md .grey {
+.first-container .col-lg-6 .grey {
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.3));
   background-color: #a1a1a1;
-  width: 100vh;
-  height: 60%;
+  height: 270px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .second-container {
   background-color: #f4f4f4;
+}
+.second-container a {
+  font-size: 16px !important;
+  line-height: 25px !important;
+  color: #002e5b;
+  font-weight: 700 !important;
+  text-decoration: underline solid #002e5b 3px;
 }
 
 .blue-line-container {
@@ -183,11 +204,26 @@ body {
   font-family: "Segoe UI Emoji";
 }
 
-.video-container img {
+.video-container {
+  height: fit-content;
+}
+.video-container .yellow {
+  height: 560px;
+  width: 50%;
+  background-color: #fde428;
+}
+.video-container .video-image {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.video-container a {
+  font-size: 16px !important;
+  line-height: 25px !important;
+  color: #002e5b;
+  font-weight: 700 !important;
+  text-decoration: underline solid #002e5b 3px;
 }
 
 .info-container {
